@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("Answer1");
+        // let a=7, b=2, c=3;
+        // sqrta=a*a;
+        // sqrtb=b*b;
+        // sqrtc=c*c;
+        // console.log(sqrta+sqrtb+sqrtc);
+
+        console.log("Answer2");
+        // avrg=(a+b+c)/3
+        // console.log(avrg);
+
+        console.log("Answer3");
+        // for (let i = 0; i < 100; i++) {
+        //     console.log(i+1);
+        // }
+
+        console.log("Answer4");
+        // for (let j = 0; j < 100; j++) {
+        //     if((j+1)%2==0)
+        //     console.log(j+1);
+        // }        
+
+        console.log("Answer5");
+        // for (let i = 1; i <= 100; i++) {
+        //     if (i%3==0) {
+        //         console.log(i);
+        //     }    
+        // }
+
+        console.log("Answer6");
+        console.log(2);
+
+        // for (let i = 3; i < 101; i++) {
+        //     flag = true;
+        //     let j = 2;
+
+        //     while (flag && j < i) {
+        //         if ( i % j == 0) {
+        //             flag = false;
+        //         }
+        //         j++;
+        //     }
+
+        //     if (flag) {
+        //         console.log(i);
+        //     }
+            
+        // }
+
+
+        console.log("Answer7");
+        // let text = "";
+        // for(i=0; i<5; i++){
+        //     for(j=0; j<5; j++){
+        //         text+="*";
+        //     }
+        //     text+="\n"
+        // }
+        // console.log(text);
+
+        console.log("Answer8");
+        // let text = "";
+        // for(i=0; i<5; i++){
+        //     for(j=i; j<5; j++){
+        //         text+="*";
+        //     }
+        //     text+="\n"
+        // }
+        // console.log(text);
+
+
+        console.log("Answer9");
+        // let flag = "false";
+        // function giveNumber(x) {
+        //     if(x<1){
+        //         return;
+        //     }
+        //     else {
+        //         while (x>=1){
+        //               if(x==1){
+        //                 flag = "true";
+        //               }
+        //               x=x/2;
+        //             }
+        //        }   
+        //      }
+        //      console.log(flag);
+         
+
+        console.log("Answer10");
+        
+        // function onluq(x) {
+        //     let counter = 0;
+        //     while (x >= 1) {
+        //         x = x/10;
+        //         counter++;
+        //     }
+        //     console.log(counter);
+        // }
+
+
+        console.log("Answer11");
+
+
+        // function findIf(y, x) {
+        //     for (i = 0 ; i <  x.length ; i++){
+        //         if (x[i] == y) {
+        //             return true;
+        //         }
+        //     }
+            
+        //     return false;
+        // }
+
+        console.log("Answer12");
+        function maxAndMin(x){
+            let max = x[0];
+            let min = x[0];
+
+            x.forEach(eded => {
+                if(min < eded){
+                    min = eded;
+                } else if(max > eded){
+                    max = eded;
+                }
+            })
+            return [min, max];
+        }            
+
+        console.log("Answer13");
+
+        function canObjectFit(doorWidth, doorLength, objectWidth, objectLength, objectHeight){
+            return (objectWidth < doorWidth && objectLength < doorLength) 
+                || (objectWidth < doorWidth && objectHeight < doorLength)
+                || (objectLength < doorWidth && objectWidth < doorLength)
+                || (objectLength < doorWidth && objectHeight < doorLength)
+                || (objectHeight < doorWidth && objectWidth < doorLength)
+                || (objectHeight < doorWidth && objectLength < doorLength);
+        }
+
+
+    </script>
+</body>
+</html>
